@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.0;net451</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net48</TargetFrameworks>
     <OutputType>Library</OutputType>
     <RootNamespace>unvell.ReoGrid</RootNamespace>
     <AssemblyName>unvell.ReoGrid</AssemblyName>
@@ -147,5 +147,14 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\DateTimeFormat.it.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\DateTimeFormat.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DateTimeFormat.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
